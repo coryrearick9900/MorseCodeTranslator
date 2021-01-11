@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script src="functions.js"></script>
+
+<style>
+
+
+    space {
+
+        width: 5px;
+    }
+
+    .everything {
+        background-color: cornflowerblue;
+    }
+
+    .everything div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #666699;
+        margin: 0 25% 0 25%;
+    }
+
+    .element * {
+        display: flex;
+        /*height: 30px;*/
+        font-size: 30px;
+        align-items: flex-start;
+    }
+
+    /*Left item in each div*/
+    .element p {
+        width: 40%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .element input {
+        width: max-content;
+        display: flex;
+    }
+
+
+
+</style>
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Morse Code Translator</title>
 </head>
 <body>
+
+<div class="everything">
+
+    <div class="element">
+        <p>Morse Code Output:</p>
+        <space></space>
+        <label>
+            <input type="text" readonly>
+        </label>
+    </div>
+
+    <div class="element">
+        <p>Input text here:</p>
+        <space></space>
+        <label>
+            <input type="text">
+        </label>
+    </div>
+
+    <div class="element">
+        <button onclick="">Enter</button>
+    </div>
+
+</div>
+
 
 </body>
 </html>
